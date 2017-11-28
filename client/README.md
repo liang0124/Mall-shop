@@ -1,6 +1,6 @@
-# vnshop
+# vue-base
 
-> vue&&node shop
+> A Vue.js project
 
 ## Build Setup
 
@@ -27,6 +27,4 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-教程视频地址：
-链接: https://pan.baidu.com/s/1qXB5BkS 密码: 6nru
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

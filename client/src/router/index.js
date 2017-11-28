@@ -1,40 +1,66 @@
 import Vue from 'vue'
+// 引入VueRouter插件
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import GoodsList from '@/view/GoodsList'
-import User from '@/view/user/index'
-import Cart from '@/view/Cart'
-import Address from '@/view/Address'
-import OrderConfirm from '@/view/OrderConfirm'
-import OrderSuccess from '@/view/OrderSuccess'
-
+// 引入商品列表组件
+import GoodsList from '@/pages/GoodsList'
+// 引入商品详情页
+import GoodsDetail from '@/pages/GoodsDetail'
+// 引入购物车组件
+import Cart from '@/pages/Cart'
+// 引入地址组件
+import Address from '@/pages/Address'
+// 引入订单列表组件
+import Orders from '@/pages/Orders'
+// 引入订单确认组件
+import OrderConfirm from '@/pages/OrderConfirm'
+// 引入订单成功组件
+import OrderSuccess from '@/pages/OrderSuccess'
+// 使用VueRouter组件
 Vue.use(Router)
-
+// 导出VueRouter的实例
 export default new Router({
-    routes: [{
-            path: '/',
-            name: 'GoodsList',
-            component: GoodsList
-        },
-        {
-            path: '/cart', //?代表可写，也可以不写 /user/1
-            component: Cart
-        },
-        {
-            path: '/address',
-            component: Address
-        },
-        {
-            path: '/orderConfirm',
-            component: OrderConfirm
-        },
-        {
-            path: '/orderSuccess',
-            component: OrderSuccess
-        },
-        {
-            path: '/user/:stark?/:xiaorong?', //?代表可写，也可以不写 /user/1
-            component: User
-        },
-    ]
+  // mode: 'history',
+  // 配置路由
+  routes: [
+    {
+      path: '/',
+      name: 'Index',
+      component: GoodsList
+    },
+    {
+      path: '/detail/:productId',
+      name: 'Detail',
+      component: GoodsDetail
+    },
+    {
+      path: '/cart',
+      name: 'Cart',
+      component: Cart
+    },
+    {
+      path: '/address',
+      name: 'Address',
+      component: Address
+    },
+    {
+      path: '/orders',
+      name: 'Orders',
+      component: Orders
+    },
+    {
+      path: '/orderConfirm',
+      name: 'OrderConfirm',
+      component: OrderConfirm
+    },
+    {
+      path: '/orderSuccess',
+      name: 'OrderSuccess',
+      component: OrderSuccess
+    },
+    {
+      path: '*',
+      name: 'Other',
+      component: GoodsList
+    }
+  ]
 })
