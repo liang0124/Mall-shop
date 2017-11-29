@@ -1,7 +1,7 @@
 <template>
     <div>
       <nav-bread>
-        <span>热门商品aa</span>
+        <span>wode热门商品</span>
       </nav-bread>
       <div class="accessory-result-page accessory-page">
         <div class="container">
