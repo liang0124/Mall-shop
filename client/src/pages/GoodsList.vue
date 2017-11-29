@@ -1,7 +1,7 @@
 <template>
     <div>
       <nav-bread>
-        <span>热门商品哈哈000</span>
+        <span>我的热门商品</span>
       </nav-bread>
       <div class="accessory-result-page accessory-page">
         <div class="container">
