@@ -2,7 +2,7 @@
   <section class="bread">
     <div class="bread-wrap">
       <nav>
-        <a href="/"> 首页 </a>
+        <a href="/"> 首页11 </a>
         <slot></slot>
       </nav>
     </div>
